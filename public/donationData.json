@@ -1,0 +1,63 @@
+
+
+
+
+
+
+
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/kScjdBt/Health.png",
+      "image_cover": "https://i.ibb.co/JFpwY3j/slide1.jpg",
+      "image_square": "https://i.ibb.co/0Z0JCMp/Rectangle-4284.png",
+      "title": "Clean water for children",
+      "category": "Health",
+      "category_bg_color": "#AEC7FF",
+      "card_bg_color": "#F87147",
+      "text_button_bg_color": "#0052FF",
+      "description": "Ensuring access to clean water for children is essential for their well-being. Governments should prioritize investments in water infrastructure to provide safe drinking water in schools and communities. Financial assistance programs can aid families in accessing clean water sources. Additionally, educating children about the importance of water conservation is crucial. Teachers play a vital role in raising awareness, creating a sustainable future, and fostering responsible water usage. By prioritizing clean water access, we can safeguard children's health and empower them to become responsible global citizens.",
+      "price": 199
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/vHsxwwH/Education.png",
+      "image_cover": "https://i.ibb.co/3pgMMh4/Rectangle-4288.png",
+      "image_square": "https://i.ibb.co/72rnpvW/Rectangle-4287-1.png",
+      "title": "Good education",
+      "category": "Education",
+      "category_bg_color": "#FFC4C6",
+      "card_bg_color": "#F14B50",
+      "text_button_bg_color": "#FFE2E4",
+      "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+      "price": 149
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/F7F4pyD/Clothing.png",
+      "image_cover": "https://i.ibb.co/6bk5Tkk/clo.png",
+      "image_square": "https://i.ibb.co/0KWdhDP/Rectangle-4287.png",
+      "title": "Used Clothing Drive",
+      "category": "Clothing",
+      "category_bg_color": "#D3ECC2",
+      "card_bg_color": "#79C23F26",
+      "text_button_bg_color": "#79C23F",
+      "description": "Organizing a used clothing drive is a meaningful way to give back to the community. To make it successful, individuals can collect gently worn clothing items and distribute donation boxes throughout neighborhoods. Publicizing the event through social media and local channels can boost participation. Volunteers can help sort, clean, and package the collected clothes for distribution to those in need. The Used Clothing Drive not only provides essential clothing but also promotes community unity and environmental sustainability by recycling textiles. Joining or organizing such drives can make a positive impact on people's lives..",
+      "price": 179
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/dM0Ym7q/Food.png",
+      "image_cover": "https://i.ibb.co/0KPWP39/baccha.jpg",
+      "image_square": "https://i.ibb.co/dt6HpY9/Rectangle-4287-2.png",
+      "title": "Better Food for Everyone",
+      "category": "Food",
+      "category_bg_color": "#FED1C4",
+      "card_bg_color": "##F8714726",
+      "text_button_bg_color": "#F87147",
+      "description": "Improving access to better food for everyone is a vital goal. Governments can facilitate this by supporting local farmers and promoting affordable, nutritious options in underserved areas. Communities can establish urban gardens and farmers' markets, increasing fresh produce accessibility. Education about healthy eating habits in schools and communities is equally crucial. Teachers and parents can play their part in encouraging children to make nutritious choices. By prioritizing Better Food for Everyone, we not only enhance health but also cultivate a more equitable, sustainable food system that benefits society as a whole.",
+      "price": 299
+    }
+    
+]
+  

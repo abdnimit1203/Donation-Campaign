@@ -8,7 +8,7 @@
 
 - feature 1  `some code`
 
-- feature 2  ** Bold text **
+- feature 2  **Bold text**
 
 - feature 3
 
