@@ -1,24 +1,26 @@
+import { useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
+import DonationDetailsCard from "../DonationDetailsCard/DonationDetailsCard";
+
 const DonationDetails = () => {
+  const donations = useLoaderData();
+  const {id} = useParams();
+  console.log(id);
 
+  const [donation, setDonation] = useState([])
+  useEffect(()=>{
+    const findDonation = donations.find(thisdonation=> thisdonation.id == id)
+    setDonation(findDonation)
+  },[id,donations])
+  console.log(donation);
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
-      <figure>
-        <img
-          src=""
-          alt="donation-card-cover"
-        />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">
-          title
-        </h2>
-        <p>description</p>
-      </div>
-
-      
+    <>
+    <div className="pt-[100px] md:pt-[200px]  mx-auto w-[80%] ">
+      {
+        <DonationDetailsCard key={donation.id} donation={donation}></DonationDetailsCard>
+      }
     </div>
-
-
+    </>
   );
 };
 
