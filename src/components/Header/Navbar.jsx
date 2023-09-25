@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full z-50">
+    <div className="absolute w-full z-50">
       <div className="navbar bg-transparent lg:px-[140px] md:px-[70px] py-4 md:py-6">
         <div className="navbar-start">
           <div className="dropdown">
