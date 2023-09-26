@@ -34,7 +34,7 @@ const Home = () => {
            </div>
             
             {
-                  filteredArray.length ==0? <h2 className="flex justify-center sm:text-4xl text-2xl flex-col items-center gap-4">Nothing matched <span className="font-extralight sm:text-base text-sm">Try again of refesh the page please...</span> </h2> : <div className="w-[80%] mx-auto py-20"><AllDonations donations={filteredArray} ></AllDonations></div>
+                  filteredArray.length ==0? <h2 className="flex justify-center sm:text-4xl text-2xl flex-col items-center gap-4 pb-40">Nothing matched <span className="font-extralight sm:text-base text-sm">Try again or refesh the page please...</span> </h2> : <div className="w-[80%] mx-auto py-20"><AllDonations donations={filteredArray} ></AllDonations></div>
             }
                
             

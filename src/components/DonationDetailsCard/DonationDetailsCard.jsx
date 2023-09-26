@@ -51,7 +51,7 @@ const DonationDetailsCard = ({ donation }) => {
       </div>
 
       <div>
-        <div className="card-body p-0  ">
+        <div className="card-body p-0 pb-40 ">
           <h2 className="card-title text-4xl font-bold">{title}</h2>
           <p className="text-slate-600 leading-7">{description}</p>
         </div>
