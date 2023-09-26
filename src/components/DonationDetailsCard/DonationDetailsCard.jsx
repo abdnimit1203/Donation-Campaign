@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const DonationDetailsCard = ({ donation }) => {
+
   const { id, image_cover, title, description, text_color, price } = donation;
 
   const notifySuccess = () => toast.success("Added Donation Successfully!");

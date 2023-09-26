@@ -7,12 +7,12 @@ const DonationDetails = () => {
   const {id} = useParams();
   console.log(id);
 
-  const [donation, setDonation] = useState([])
+  const [donation, setDonation] = useState({})
   useEffect(()=>{
     const findDonation = donations.find(thisdonation=> thisdonation.id == id)
     setDonation(findDonation)
   },[id,donations])
-  console.log(donation);
+  // console.log("problem ?",donation);
   return (
     <>
     <div className="pt-[100px] md:pt-[200px]  mx-auto w-[80%] ">
