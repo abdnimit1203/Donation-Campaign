@@ -1,5 +1,5 @@
 import { Chart } from "react-google-charts";
-import { MdOutlineMoneyOffCsred } from "react-icons/md";
+// import { MdOutlineMoneyOffCsred } from "react-icons/md";
 const Staistics = () => {
   const storedData = localStorage.getItem("donations");
   let yourDonation = 0;
@@ -18,7 +18,7 @@ const Staistics = () => {
           You have not donated yet!
           <br /> Please Donate and then come back
         </h2>
-      ) : ( */}
+      ) : ( */
         <div className="min-h-screen flex items-center flex-col justify-center">
           <Chart
             className="h-[400px] md:h-[600px]"
