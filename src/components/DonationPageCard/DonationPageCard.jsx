@@ -20,7 +20,7 @@ const DonationPageCard = ({ donation }) => {
           {category}
         </button>
         <h2 className="card-title text-black text-2xl">{title}</h2>
-        <p>{price}</p>
+        <p className="font-semibold">${price}</p>
         <Link className="h-full pb-4" to={`/donation/${id}`} state={title}>
           <button
             className="btn btn-md w-fit h-10 rounded-md font-bold text-white"

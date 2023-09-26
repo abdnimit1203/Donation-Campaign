@@ -1,4 +1,13 @@
-const Banner = () => {
+import { useState } from "react";
+import PropTypes from "prop-types";
+
+const Banner = ({handleSearchData}) => {
+  const [searchText, setSearchText] = useState(null);
+  const handleSearchText = (e) => {
+    console.log(e.target.value);
+    setSearchText(e.target.value);
+  };
+  
   return (
     <div>
       <div className="card bg-base-100 relative rounded-none">
@@ -15,15 +24,18 @@ const Banner = () => {
           </h2>
           <div className="join">
             <input
+            onChange={handleSearchText}
               className="input w-full  join-item input-bordered "
               placeholder="Search here..."
             />
-            <button className="btn join-item btn-primary">Search</button>
+            <button onClick={()=>handleSearchData(searchText)} className="btn join-item btn-primary">Search</button>
           </div>
         </div>
       </div>
     </div>
   );
 };
-
+Banner.propTypes = {
+  handleSearchData: PropTypes.func
+};
 export default Banner;

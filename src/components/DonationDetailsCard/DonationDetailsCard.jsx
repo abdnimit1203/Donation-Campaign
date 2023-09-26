@@ -17,6 +17,7 @@ const DonationDetailsCard = ({ donation }) => {
     if (!donationItems) {
       storedDonationArray.push(donation);
       localStorage.setItem("donations", JSON.stringify(storedDonationArray));
+      notifySuccess();
     } else {
       const isExists = donationItems.find((donation) => donation.id == id);
       if (!isExists) {
@@ -41,10 +42,10 @@ const DonationDetailsCard = ({ donation }) => {
         <div className="relative -top-11 md:-top-32 px-4 py-[9px] md:p-10 bg-[#1111116c] z-10 rounded-b-xl">
           <button
             onClick={handleAddToDonation}
-            className="btn btn-xs md:btn-md w-fit text-white font-semibold border-none"
+            className="btn rounded-sm btn-xs md:btn-md w-fit text-white font-semibold border-none"
             style={{ backgroundColor: text_color }}
           >
-            Donate $ {price}
+            Donate ${price}
           </button>
         </div>
       </div>
