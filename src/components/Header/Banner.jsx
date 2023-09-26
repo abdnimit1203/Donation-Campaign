@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Banner = ({handleSearchData}) => {
   const [searchText, setSearchText] = useState(null);
   const handleSearchText = (e) => {
-    console.log(e.target.value);
+   
     setSearchText(e.target.value);
   };
   
@@ -25,7 +25,8 @@ const Banner = ({handleSearchData}) => {
           <div className="join">
             <input
             onChange={handleSearchText}
-              className="input w-full  join-item input-bordered "
+              className="input w-full  join-item input-bordered focus:outline-offset-0 focus:outline-[#FF444A]"
+
               placeholder="Search here..."
             />
             <button onClick={()=>handleSearchData(searchText)} className="btn join-item btn-primary">Search</button>

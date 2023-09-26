@@ -1,33 +1,43 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../components/Header/Banner"
 import AllDonations from "../../components/AllDonations/AllDonations";
-import { useState } from "react";
+import {  useState } from "react";
 
 
 const Home = () => {
     const donations = useLoaderData();
     const [filteredArray, setFilteredArray] =useState(donations)
-    let searchedDonations = donations
-    let newarray =[]
+    const [isSearched, setIsSearched] =useState(false)
+    const [searchedText, setSearchedText] =useState("none")
+    let searchedDonations = donations;
     const handleSearchData= (searchText) =>{
-        // if(searchText == donations[0].category ){
-        //     console.log("Matched");
-        // }else{
-        //     console.log("Didn't matched");
-        // }
-        newarray = donations.filter(donation=> donation.category == searchText)
+        const newArray = donations.filter(donation=> donation.category.toUpperCase() == searchText.toUpperCase())
+        setFilteredArray(newArray)
+        setIsSearched(true)
+        setSearchedText(searchText)
     }
+    
+    
     console.log(searchedDonations);
     console.log("filtered",filteredArray);
     
-    console.log(newarray);
+
     return (
         <div>
             <div><Banner handleSearchData={handleSearchData}></Banner></div>
-           
-            <div className="w-[80%] mx-auto py-20">
-               <AllDonations donations={searchedDonations} ></AllDonations>
-            </div>
+           <div className="p-10">
+           {
+            
+                isSearched? <p className="text-red-700">You searched for `{searchedText}`</p>:<h2></h2>
+            
+           }
+           </div>
+            
+            {
+                  filteredArray.length ==0? <h2 className="flex justify-center sm:text-4xl text-2xl flex-col items-center gap-4">Nothing matched <span className="font-extralight sm:text-base text-sm">Try again of refesh the page please...</span> </h2> : <div className="w-[80%] mx-auto py-20"><AllDonations donations={filteredArray} ></AllDonations></div>
+            }
+               
+            
             
 
         </div>
