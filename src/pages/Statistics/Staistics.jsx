@@ -10,7 +10,7 @@ const Staistics = () => {
 
   return (
     <div className="">
-      {yourDonation == 0 ? (
+      {/* {yourDonation == 0 ? (
         <h2 className="text-xl font-semibold text-rose-800 text-center flex flex-col items-center justify-center min-h-screen gap-6">
           <span className="text-9xl">
             <MdOutlineMoneyOffCsred />{" "}
@@ -18,7 +18,7 @@ const Staistics = () => {
           You have not donated yet!
           <br /> Please Donate and then come back
         </h2>
-      ) : (
+      ) : ( */}
         <div className="min-h-screen flex items-center flex-col justify-center">
           <Chart
             className="h-[400px] md:h-[600px]"
@@ -47,7 +47,7 @@ const Staistics = () => {
             </div>
           </div>
         </div>
-      )}
+      }
     </div>
   );
 };

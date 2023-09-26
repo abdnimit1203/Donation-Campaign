@@ -28,7 +28,7 @@ const Home = () => {
            <div className="p-10">
            {
             
-                isSearched? <p className="text-red-700">You searched for `{searchedText}`</p>:<h2></h2>
+                isSearched? <p className="text-red-700">You searched for `{searchedText}` <br />{filteredArray.length} results found... </p>:<h2></h2>
             
            }
            </div>
