@@ -6,8 +6,8 @@ const DonationDetailsCard = ({ donation }) => {
 
   const { id, image_cover, title, description, text_color, price } = donation;
 
-  const notifySuccess = () => toast.success("Added Donation Successfully!");
-  const notifyWarning = () => toast.error("Opps! You Already This Donation!"); // demo 2
+  const notifySuccess = () => toast.success("Successfully Donated!");
+  const notifyWarning = () => toast.error("Opps! You already donated!"); // demo 2
 
   const handleAddToDonation = () => {
     const storedDonationArray = [];
