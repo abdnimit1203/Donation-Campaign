@@ -1,13 +1,12 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-const Banner = ({handleSearchData}) => {
+const Banner = ({ handleSearchData }) => {
   const [searchText, setSearchText] = useState(null);
   const handleSearchText = (e) => {
-   
     setSearchText(e.target.value);
   };
-  
+
   return (
     <div>
       <div className="card bg-base-100 relative rounded-none">
@@ -24,12 +23,23 @@ const Banner = ({handleSearchData}) => {
           </h2>
           <div className="join">
             <input
-            onChange={handleSearchText}
-              className="input w-full  join-item input-bordered focus:outline-offset-0 focus:outline-[#FF444A]"
-
+              onChange={handleSearchText}
+              list="categories"
+              className="input w-full  join-item input-bordered focus:outline-offset-0 focus:outline-[#FF444A] "
               placeholder="Search here..."
             />
-            <button onClick={()=>handleSearchData(searchText)} className="btn join-item btn-primary">Search</button>
+            <datalist id="categories">
+              <option value="Health">Health</option>
+              <option value="Education">Education</option>
+              <option value="Clothing">Clothing</option>
+              <option value="Food">Food</option>
+            </datalist>
+            <button
+              onClick={() => handleSearchData(searchText)}
+              className="btn join-item btn-primary"
+            >
+              Search
+            </button>
           </div>
         </div>
       </div>
@@ -37,6 +47,6 @@ const Banner = ({handleSearchData}) => {
   );
 };
 Banner.propTypes = {
-  handleSearchData: PropTypes.func
+  handleSearchData: PropTypes.func,
 };
 export default Banner;

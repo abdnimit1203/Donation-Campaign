@@ -27,7 +27,7 @@ const Donation = () => {
               <GiPayMoney />{" "}
             </span>{" "}
             Please donate first !
-          </h2>:<div className="pt-[100px]">
+          </h2>:<div className="pt-[100px] px-10">
         <div className=" py-20 grid grid-cols-1 lg:grid-cols-2 gap-6 relative items-center justify-center w-[90%] mx-auto">
           {donatedData
                 .slice(0, dataLenght)
@@ -46,7 +46,7 @@ const Donation = () => {
               onClick={() => {
                 handleSeeAll(), setSeeAll(!seeAll);
               }}
-              className="btn btn-lg px-10 bg-[#009444] hover:bg-green-700 text-white"
+              className="btn btn-lg px-10 mb-10 bg-[#009444] hover:bg-green-700 text-white"
             >
               {seeAll ? `See Less` : `See All`}
             </button>

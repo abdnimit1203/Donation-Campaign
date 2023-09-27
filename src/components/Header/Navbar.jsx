@@ -24,7 +24,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-6 shadow bg-base-100 rounded-box w-52 space-y-4 text-base font-bold"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-6 shadow bg-base-100 rounded-box w-52 space-y-4 text-base font-semibold"
             >
               <NavLink
                 to="/"
@@ -44,7 +44,7 @@ const Navbar = () => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? " active text-primary  underline underline-offset-4  "
+                    ? " active text-primary  underline underline-offset-4  font-bold"
                     : ""
                 }
               >
@@ -69,14 +69,14 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-end hidden md:flex">
-          <ul className="menu menu-horizontal px-1 flex gap-8 text-lg font-bold">
+          <ul className="menu menu-horizontal px-1 flex gap-8 text-lg font-semibold">
             <NavLink
               to="/"
               className={({ isActive, isPending }) =>
                 isPending
                   ? "pending"
                   : isActive
-                  ? " active text-primary  underline underline-offset-4 "
+                  ? " active text-primary  underline underline-offset-4 font-bold "
                   : ""
               }
             >

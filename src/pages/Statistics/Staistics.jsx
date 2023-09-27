@@ -3,11 +3,15 @@ import { Chart } from "react-google-charts";
 const Staistics = () => {
   const storedData = localStorage.getItem("donations");
   let yourDonation = 0;
+  let totalDonation = 100;
   if (storedData) {
-    yourDonation = JSON.parse(storedData).length;
+    yourDonation = (JSON.parse(storedData).length *100)/12;
   }
   console.log(yourDonation);
-
+  if(yourDonation>0){
+    totalDonation = 100 - yourDonation;
+  }
+  
   return (
     <div className="">
       {/* {yourDonation == 0 ? (
@@ -26,7 +30,7 @@ const Staistics = () => {
             data={[
               ["Donation type", "Donation percentage"],
               ["Your Donation", yourDonation],
-              ["Total Donation", 12 - yourDonation],
+              ["Total Donation", totalDonation],
             ]}
             options={{
               legend: "none",
@@ -36,7 +40,7 @@ const Staistics = () => {
             }}
             width="100%"
           />
-          <div className="flex sm:gap-12 items-center font-semibold flex-col sm:flex-row">
+          <div className="flex sm:gap-12 items-center font-semibold flex-col sm:flex-row mb-10">
             <div className="flex items-center gap-4">
               <p>Your Donation </p>
               <p className="bg-[#00C49F] w-[100px] h-[12px] rounded-sm"></p>

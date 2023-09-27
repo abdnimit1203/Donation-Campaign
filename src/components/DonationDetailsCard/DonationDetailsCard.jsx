@@ -39,10 +39,10 @@ const DonationDetailsCard = ({ donation }) => {
             className="w-full rounded-xl"
           />
         </figure>
-        <div className="relative -top-11 md:-top-32 px-4 py-[9px] md:p-10 bg-[#1111116c] z-10 rounded-b-xl">
+        <div className="relative -top-11 md:-top-32 px-4 py-[6px] md:p-10 bg-[#1111116c] z-10 rounded-b-xl">
           <button
             onClick={handleAddToDonation}
-            className="btn rounded-sm btn-xs md:btn-md w-fit text-white font-semibold border-none"
+            className="btn rounded-sm btn-sm md:btn-md w-fit text-white font-semibold border-none"
             style={{ backgroundColor: text_color }}
           >
             Donate ${price}
