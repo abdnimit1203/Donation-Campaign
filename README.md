@@ -1,6 +1,6 @@
 # Donation Campaign - Assignment 8 
 
- [Live Server link](https://b8a8-donation-campaign-abdnimit.netlify.app/) 
+ Live Server link : [Donation Campaign](https://b8a8-donation-campaign-abdnimit.netlify.app/) 
 
 
 ### Project Features
