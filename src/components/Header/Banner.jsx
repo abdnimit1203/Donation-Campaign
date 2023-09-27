@@ -18,7 +18,7 @@ const Banner = ({ handleSearchData }) => {
           />
         </figure>
         <div className="card-body bg-[#ffffffee] sm:absolute w-full h-full flex flex-col justify-center items-center gap-8 pb-10 pt-[200px] sm:pt-[100px]">
-          <h2 className="card-title text-center text-2xl lg:text-5xl font-bold">
+          <h2 className="card-title text-center text-2xl lg:text-5xl font-bold xl:pb-4">
             I Grow By Helping People In Need
           </h2>
           <div className="join">
