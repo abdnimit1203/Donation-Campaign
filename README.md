@@ -1,4 +1,4 @@
-# Donation Campaign - Assignment 8 
+# 8. Donation Campaign 
 
  Live Server link : [Donation Campaign](https://b8a8-donation-campaign-abdnimit.netlify.app/) 
 
